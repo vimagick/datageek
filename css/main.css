@@ -67,7 +67,7 @@ header {
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  background: #2e7bcf url(../img/header-bg.jpg) 0 0 repeat-x;
+  background: #2e7bcf url(/img/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
 
@@ -87,6 +87,19 @@ header h2 {
   line-height: 1.3;
   width: 540px;
   letter-spacing: 0;
+}
+
+header div.logo {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: 0;
+  top: 0;
+}
+
+header div.logo img {
+  width: 180px;
+  height: 180px;
 }
 
 .inner {
@@ -135,7 +148,7 @@ a.button {
   font-size: 23px;
   color: #fff;
   padding-left: 68px;
-  padding-top: 22px;
+  padding-top: 28px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
 }
 a.button small {
