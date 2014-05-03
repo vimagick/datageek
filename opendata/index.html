@@ -1,0 +1,20 @@
+---
+layout: default
+title: 数据集
+---
+
+{% for item in site.data.opendata %}
+<ul>
+    <li>
+        <span>
+            {% if item.published == false %}
+            [即将发布]
+            {% else %}
+            [{{item.date}}]
+            {% endif %}
+        </span>
+        <a href="/opendata/{{item.name}}.html">{{item.title}}</a>
+        <span>{{ item.type }}</span>
+    </li>
+</ul>
+{% endfor %}
