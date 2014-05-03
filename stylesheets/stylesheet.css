@@ -142,13 +142,7 @@ a.button small {
   display: block;
   font-size: 11px;
 }
-header a.profile {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 208px;
-  display: block;
-}
+
 aside a.button {
   width: 138px;
   padding-left: 64px;
