@@ -510,3 +510,13 @@ div.opendata h3 {
     padding: 5px;
     clear: both;
 }
+
+.type {
+    color: white;
+    background-color: green;
+}
+
+.free {
+    color: white;
+    background-color: red;
+}
