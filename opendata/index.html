@@ -1,23 +1,23 @@
 ---
 layout: default
-title: 数据集
+title: 资源
 ---
 
 {% for item in site.data.opendata %}
 <ul>
-    <li>
-        <span>
-            {% if item.published == false %}
-            [即将发布]
-            {% else %}
-            [{{item.date}}]
-            {% endif %}
-        </span>
-        <a href="/opendata/{{item.name}}.html">{{item.title}}</a>
-        <span class="type">{{ item.type }}</span>
-        {% if item.free %}
-        <span class="free">免费</span>
-        {% endif %}
-    </li>
+  <li>
+    <span>
+      {% if item.published == false %}
+        [即将发布]
+      {% else %}
+        [{{item.date}}]
+      {% endif %}
+    </span>
+    <a href="/opendata/{{item.name}}.html">{{item.title}}</a>
+    <span class="type">{{ item.type }}</span>
+    {% if item.free %}
+    <span class="free">免费</span>
+    {% endif %}
+  </li>
 </ul>
 {% endfor %}

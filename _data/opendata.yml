@@ -7,6 +7,7 @@
   date: 2014-04-18
   type: json
   free: true
+  hot: true
 
 - name: appstore-ios
   title: 苹果AppStore的IOS应用信息
@@ -25,6 +26,7 @@
   title: 中国邮政编码数据库
   date: 2014-03-26
   type: csv
+  hot: true
 
 - name: makepolo-detail
   title: 马可波罗公司黄页

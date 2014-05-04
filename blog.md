@@ -1,10 +1,11 @@
 ---
 layout: default
 title: 博客
+permalink: /blog/
 ---
 
 <div id="home">
-    <h1>Blog Posts</h1>
+    <h2>Coming Soon!</h1>
     <ul class="posts">
         {% for post in site.posts %}
         <li>

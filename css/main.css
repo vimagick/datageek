@@ -520,3 +520,30 @@ div.opendata h3 {
     color: white;
     background-color: red;
 }
+
+header nav a {
+  float: left;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
+}
+
+header nav a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+#sidebar ul {
+  padding: 0;
+}
+
+#sidebar li {
+  font-size: 14px;
+  list-style: none;
+  padding: 5px;
+}
+
+#sidebar h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
