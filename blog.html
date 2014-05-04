@@ -4,15 +4,26 @@ title: 博客
 permalink: /blog/
 ---
 
-<div id="home">
-    <h2>Coming Soon!</h1>
-    <ul class="posts">
-        {% for post in site.posts %}
-        <li>
-            <span>{{ post.date | date_to_string }}</span> &raquo; 
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+<style>
 
+  ul.posts li a {
+    font-size: 24px;
+    color: #0088CC;
+    text-decoration: none;
+
+  }
+
+</style>
+
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li>
+        <div class="post-list">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <span class="post-time">{{ post.date | date_to_string }}</span>
+        </div>
+    </li>
+    <hr>
+  {% endfor %}
+</ul>

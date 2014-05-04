@@ -1,5 +1,4 @@
-name: Data Geek
+name: DataGeek
 markdown: redcarpet
 pygments: true
-permalink: /404.html
-
+timezone: Asia/Shanghai
