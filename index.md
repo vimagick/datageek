@@ -17,12 +17,3 @@ title: 首页
 - 体贴的服务
 - 优惠的价格
 
-## code
-
-```python
-
-def echo():
-    print 'hello, world'
-
-
-```
