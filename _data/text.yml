@@ -1,0 +1,34 @@
+- name: logistics-network
+  title: 全国物流网点分布情况
+  published: false
+
+- name: stackoverflow-jobs
+  title: stackoverflow招聘信息
+  date: 2014-04-18
+  type: json
+  free: true
+  hot: true
+
+- name: appstore-ios
+  title: 苹果AppStore的IOS应用信息
+  published: false
+
+- name: ip-cn
+  title: 中国IP地址段数据库
+  published: false
+
+- name: alibaba-contact
+  title: 阿里巴巴公司黄页(联系信息)
+  date: 2014-03-31
+  type: json
+
+- name: zipcode
+  title: 中国邮政编码数据库
+  date: 2014-03-26
+  type: csv
+  hot: true
+
+- name: makepolo-detail
+  title: 马可波罗公司黄页
+  published: false
+
