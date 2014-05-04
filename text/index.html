@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 资源
+title: 文本
 ---
 
-{% for item in site.data.opendata %}
+{% for item in site.data.text %}
 <ul>
   <li>
     <span>
@@ -13,7 +13,7 @@ title: 资源
         [{{item.date}}]
       {% endif %}
     </span>
-    <a href="/opendata/{{item.name}}.html">{{item.title}}</a>
+    <a href="/text/{{item.name}}.html">{{item.title}}</a>
     <span class="type">{{ item.type }}</span>
     {% if item.free %}
     <span class="free">免费</span>

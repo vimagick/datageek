@@ -1,5 +1,5 @@
 ---
-layout: opendata
+layout: text
 title: 阿里巴巴公司黄页(联系信息)
 info:
     文件: alibaba-contact.json.zip

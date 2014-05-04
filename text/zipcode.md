@@ -1,5 +1,5 @@
 ---
-layout: opendata
+layout: text
 title: 中国邮政编码数据库
 info:
     文件: zipcode.csv.zip

@@ -490,23 +490,23 @@ footer a:hover {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
 
-div.opendata dt {
+div.text dt {
     clear: left;
     float: left;
     font-weight: bold;
     padding: 2px 5px;
 }
 
-div.opendata dt:after {
+div.text dt:after {
     content: ": ";
 }
 
-div.opendata dd {
+div.text dd {
     float: left;
     padding: 2px 5px;
 }
 
-div.opendata h3 {
+div.text h3 {
     padding: 5px;
     clear: both;
 }

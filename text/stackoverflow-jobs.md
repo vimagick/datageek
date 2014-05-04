@@ -1,5 +1,5 @@
 ---
-layout: opendata
+layout: text
 title: stackoverflow招聘信息
 info:
     文件: stackoverflow-jobs.json.zip
