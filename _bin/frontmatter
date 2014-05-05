@@ -3,7 +3,7 @@
 
 import yaml
 import json
-from sh import grep, sed
+from sh import grep, sed, jq
 from io import BytesIO
 from sys import stdin
 from datetime import datetime
@@ -11,5 +11,6 @@ from datetime import datetime
 txt = grep(sed('-n', '/^---$/,/^---$/p', _in=stdin), '-v', '^---$')
 buf = BytesIO(str(txt))
 obj = yaml.load(buf)
-print(json.dumps(obj, default=lambda x:str(x)))
+out = json.dumps(obj, default=lambda x:str(x))
+print jq('-r', r'"- name: "+.info.name+"\n  title: "+.title+"\n  date: "+.date+"\n  tags: "+(.tags|@json)', _in=out)
 
