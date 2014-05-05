@@ -1,0 +1,18 @@
+
+<div class="sidebar-box">
+  <h3 class="sidebar-header">{{include.tagname}}</h3>
+  <ul class="sidebar-list">
+    {% assign count = 0 %}
+    {% for item in site.data.text %}
+      {% if item.tags contains {{include.tag}} %}
+        {% assign count = count | plus: 1 %}
+        <li class="sidebar-item"><a href="/data/text/{{item.name}}.html">{{item.title}}</a></li>
+      {% endif %}
+    {% endfor %}
+
+    {% if count == 0 %}
+      <li class="sidebar-item">空</li>
+    {% endif %}
+  </ul>
+</div>
+

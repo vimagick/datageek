@@ -13,6 +13,7 @@
 
 - name: appstore-ios
   title: 苹果AppStore的IOS应用信息
+  tags: [json]
 
 - name: ip-cn
   title: 中国IP地址段数据库
@@ -20,7 +21,7 @@
 - name: alibaba-contact
   title: 阿里巴巴公司黄页(联系信息)
   date: 2014-03-26 00:00:00
-  tags: [json]
+  tags: [json, new]
 
 - name: makepolo-detail
   title: 马可波罗公司黄页

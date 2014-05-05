@@ -32,32 +32,18 @@
 
     <div id="content-wrapper">
       <div class="inner clearfix">
+
         <aside id="sidebar">
-
-          <h3>热门资源</h3>
-          <ul>
-            {% for item in site.data.text %}
-              {% if item.hot %}
-              <li><a href="/data/text/{{item.name}}.html">{{item.title}}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-
-          <h3>最新发布</h3>
-          <ul>
-              空
-          </ul>
-
-          <h3>强烈推荐</h3>
-          <ul>
-              空
-          </ul>
-
+          {% include list tag="hot" tagname="热门下载" %}
+          {% include list tag="new" tagname="最新发布" %}
+          {% include list tag="vote" tagname="强力推荐" %}
+          {% include list tag="free" tagname="免费资源" %}
         </aside>
 
         <section id="main-content">
           {{ content }}
         </section>
+
       </div>
     </div>
 
