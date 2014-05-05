@@ -9,6 +9,8 @@
     background-color: #FFF8DC;
     height: 20px;
     width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   #toc li {

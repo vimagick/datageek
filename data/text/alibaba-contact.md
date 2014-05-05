@@ -4,7 +4,7 @@ title: 阿里巴巴公司黄页(联系信息)
 date: 2014-03-31 00:00:00
 info:
     name: alibaba-contact
-    type: json
+    format: json
     date: 2014-03-31 00:00:00
     count: 7597678
     price: 100.00

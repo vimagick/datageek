@@ -2,22 +2,31 @@
 layout: default
 ---
 
-<h2 id="post-title">{{ page.title }}</h2>
-<p class="meta">
-  <b>日期:</b>
-  <span>{{ page.date | date_to_xmlschema }}</span>
-  <br/>
-  {% if page.tags.size > 0 %}
-    <b>标签:</b>
-    {% for tag in page.tags %}
-      <span class="post-tag"> {{ tag }} </span>
-    {% endfor %}
-  {% endif %}
-</p>
-
-{% include toc %}
-
 <div class="post">
+  <h2 id="post-title">{{ page.title }}</h2>
+  <table class="kv">
+    <tr>
+      <td>日期</td>
+      <td>
+        <span>{{ page.date | date_to_xmlschema }}</span>
+      </td>
+    </tr>
+
+    {% if page.tags.size > 0 %}
+      <tr>
+        <td>标签</td>
+        <td>
+          {% for tag in page.tags %}
+            <span class="post-tag"> {{ tag }} </span>
+          {% endfor %}
+        </td>
+      </tr>
+    {% endif %}
+
+  </table>
+
+  {% include toc %}
+
   {{ content }}
 </div>
 

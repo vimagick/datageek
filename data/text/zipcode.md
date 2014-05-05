@@ -2,10 +2,11 @@
 layout: text
 title: 中国邮政编码数据库
 date: 2014-03-26 00:00:00
+desc: "本数据集包含完整的全国邮政编码"
 tags: [hot]
 info:
     name: zipcode
-    type: csv
+    format: csv
     count: 1386529
     date: 2014-03-26
     price: 50.00

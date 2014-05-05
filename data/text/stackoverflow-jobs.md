@@ -5,7 +5,7 @@ date: 2014-04-18 00:00:00
 tags: [hot, free]
 info:
     name: stackoverflow-jobs
-    type: json
+    format: json
     count: 1094
     date: 2014-04-18
     price: 0.00

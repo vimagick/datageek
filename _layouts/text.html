@@ -3,12 +3,24 @@ layout: post
 ---
 
 <div id="text">
-  <h3>描述</h3>
+
+  {% if page.desc %}
+    <h3>描述</h3>
+    <p>{{ page.desc }}</p>
+  {% endif %}
+
+  <h3>信息</h3>
   <table class="kv">
     {% for kv in page.info %}
       <tr>
-        <td>{{ kv[0] }}</td>
-        <td>{{ kv[1] }}</td>
+        {% assign k = kv[0] %}
+        {% assign v = kv[1] %}
+        {% if site.data.dict contains k %}
+          <td>{{ site.data.dict[k] }}</td>
+        {% else %}
+          <td>{{ k }}</td>
+        {% endif %}
+        <td>{{ v }}</td>
       </tr>
     {% endfor %}
   </table>
@@ -50,5 +62,6 @@ layout: post
       <li><a href="{{ref}}">{{ref}}</a></li>
     {% endfor %}
   </ul>
+
 </div>
 
