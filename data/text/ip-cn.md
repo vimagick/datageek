@@ -11,15 +11,15 @@ info:
     date: 2014-04-12
     price: 10.00
 fields:
-    start：段首
-    end：段尾
-    country：国家(中国)
-    province：省份
-    city：城市
-    district：地区
-    isp：服务商
-    type：分类
-    desc：描述
+    start: 段首
+    end: 段尾
+    country: 国家(中国)
+    province: 省份
+    city: 城市
+    district: 地区
+    isp: 服务商
+    type: 分类
+    desc: 描述
 refs:
     - http://ftp.apnic.net/stats/apnic/delegated-apnic-latest
     - http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json&ip=8.8.8.8
