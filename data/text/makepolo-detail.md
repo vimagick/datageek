@@ -46,7 +46,6 @@ files:
     "mode": "服务型",
     "type": "其他有限责任公司",
     "name": "中祥创新电子科技有限公司 市场七部",
-    parse error: Unfinished string
     "desc": "...",
     "date": "2009",
     "mid": "gongle2011",
