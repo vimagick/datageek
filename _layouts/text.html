@@ -4,28 +4,51 @@ layout: post
 
 <div id="text">
   <h3>描述</h3>
-  <ul>
+  <table class="kv">
     {% for kv in page.info %}
-      <li>
-        <b>{{ kv[0] }}:</b> {{ kv[1] }}
-      </li>
+      <tr>
+        <td>{{ kv[0] }}</td>
+        <td>{{ kv[1] }}</td>
+      </tr>
     {% endfor %}
-  </ul>
+  </table>
+
   <h3>字段</h3>
-  <ol>
-    {% for field in page.fields %}
-      <li> {{ field }} </li>
+  <table class="kv">
+    {% for kv in page.fields %}
+      <tr>
+        <td>{{ kv[0] }}</td>
+        <td>{{ kv[1] }}</td>
+      </tr>
     {% endfor %}
-  </ol>
+  </table>
+
   <h3>示例</h3>
   {{ content }}
+
+  <h3>下载</h3>
+  <ul>
+    {% if page.files.size > 0 %}
+      {% for link in page.files %}
+        {% assign kv = link | split:"#" %}
+        {% assign url = kv[0] %}
+        {% if kv.size == 2 %}
+          {% assign code = kv[1] %}
+        {% else %}
+          {% assign code = "收费" %}
+        {% endif %}
+        <li><a href="{{url}}" title="提取码: {{code}}">{{kv[0]}}</a></li>
+      {% endfor %}
+    {% else %}
+        <li>资源尚未上传</li>
+    {% endif %}
+  </ul>
+
   <h3>来源</h3>
   <ul>
     {% for ref in page.refs %}
-      <li><a href="{{ ref }}">{{ ref }}</a></li>
+      <li><a href="{{ref}}">{{ref}}</a></li>
     {% endfor %}
   </ul>
 </div>
-
-{% include disqus %}
 

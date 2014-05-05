@@ -3,20 +3,21 @@ layout: text
 title: 阿里巴巴公司黄页(联系信息)
 date: 2014-03-31 00:00:00
 info:
-    文件: alibaba-contact.json.zip
-    条数: 7597678
-    日期: 2014-03-31
-    售价: ￥100.00
+    name: alibaba-contact
+    type: json
+    date: 2014-03-31 00:00:00
+    count: 7597678
+    price: 100.00
 fields:
-    - address: 地址
-    - cellphone: 移动电话
-    - fax: 传真
-    - name: 公司名称
-    - time: 采集时间
-    - mid: 用户编号
-    - zipcode: 邮编
-    - phone: 电话
-    - contact: 联系人
+    address: 地址
+    cellphone: 移动电话
+    fax: 传真
+    name: 公司名称
+    time: 采集时间
+    mid: 用户编号
+    zipcode: 邮编
+    phone: 电话
+    contact: 联系人
 refs:
     - http://corp.1688.com/company/product_category_list.htm
 ---

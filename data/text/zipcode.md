@@ -4,19 +4,22 @@ title: 中国邮政编码数据库
 date: 2014-03-26 00:00:00
 tags: [hot]
 info:
-    文件: zipcode.csv.zip
-    条数: 1386529
-    日期: 2014-03-26
-    售价: ￥50.00
+    name: zipcode
+    type: csv
+    count: 1386529
+    date: 2014-03-26
+    price: 50.00
 fields:
-    - 省份
-    - 城市
-    - 城市邮编
-    - 区县
-    - 区县邮编
-    - 街道
+    province: 省份
+    city: 城市
+    city_code: 城市邮编
+    county: 区县
+    county_code: 区县邮编
+    village: 街道
 refs:
     - http://www.youbianku.com/
+files:
+    - http://yunpan.cn/QigbSgU9f4RMK
 ---
 
 ```
@@ -31,8 +34,4 @@ refs:
 "宁夏","中卫","755000","海原县","755200","文联巷"
 "宁夏","中卫","755000","海原县","755200","杨明乡"
 ```
-
-### 下载
-
-- <http://yunpan.cn/QigbSgU9f4RMK> （提取码：****）
 

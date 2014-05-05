@@ -4,23 +4,26 @@ title: stackoverflow招聘信息
 date: 2014-04-18 00:00:00
 tags: [hot, free]
 info:
-    文件: stackoverflow-jobs.json.zip
-    条数: 1094
-    日期: 2014-04-18
-    售价: ￥0.00
+    name: stackoverflow-jobs
+    type: json
+    count: 1094
+    date: 2014-04-18
+    price: 0.00
 fields:
-    - rdate
-    - date
-    - desc
-    - employer
-    - jobid
-    - location
-    - tags
-    - time
-    - title
-    - url
+    rdate: 相对日期
+    date: 日期
+    desc: 描述
+    employer: 公司
+    jobid: 编号
+    location: 地点
+    tags: 标签
+    time: 采集时间
+    title: 标题
+    url: 链接
 refs:
     - http://careers.stackoverflow.com/jobs
+files:
+    - http://yunpan.cn/QigGDZxH3eb4a#5c52
 ---
 
 ```json
@@ -43,8 +46,4 @@ refs:
     "time": 1397834468
 }
 ```
-
-### 下载
-
-- <http://yunpan.cn/QigGDZxH3eb4a> （提取码：5c52）
 

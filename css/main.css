@@ -560,3 +560,23 @@ ul.posts li {
 .post-tag:hover {
   background-color: #C4DAE9;
 }
+
+.post table.kv {
+  width: 50%;
+}
+
+.post table.kv td {
+  padding: 2px 5px;
+}
+
+.post table.kv td:first-child {
+  font-weight: bold;
+  text-align: right;
+  width: 30%;
+}
+
+.post table.kv td:last-child {
+  text-align: left;
+  width: 70%;
+}
+
