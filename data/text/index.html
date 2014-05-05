@@ -3,21 +3,29 @@ layout: default
 title: 文本
 ---
 
-{% for item in site.data.text %}
-<ul>
-  <li>
-    <span>
-      {% if item.published == false %}
-        [即将发布]
-      {% else %}
-        [{{item.date}}]
-      {% endif %}
-    </span>
-    <a href="/data/text/{{item.name}}.html">{{item.title}}</a>
-    <span class="type">{{ item.type }}</span>
-    {% if item.free %}
-    <span class="free">免费</span>
-    {% endif %}
-  </li>
+<ul class="posts">
+  {% for item in site.data.text %}
+    <li>
+      <div class="post-list">
+
+        <span class="post-time">
+          {% if item.published == false %}
+            [即将发布]
+          {% else %}
+            [{{item.date}}]
+          {% endif %}
+        </span>
+        <a href="/data/text/{{item.name}}.html">{{item.title}}</a>
+        <span class="type">{{ item.type }}</span>
+        {% if item.free %}
+        <span class="free">免费</span>
+        {% endif %}
+
+      </div>
+    </li>
+  {% endfor %}
+
+  {% if site.data.text.size == 0 %}
+    <p>这厮很懒，啥都没写</p>
+  {% endif %}
 </ul>
-{% endfor %}
