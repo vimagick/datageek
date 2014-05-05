@@ -4,7 +4,11 @@ permalink: date
 ---
 
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta">
+<span><b>标签:</b> {{ page.tags | join:", " }}</span>
+<br/>
+<span><b>日期:</b> {{ page.date | date_to_xmlschema }}</span>
+</p>
 
 <div class="post">
     {{ content }}

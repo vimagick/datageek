@@ -64,7 +64,7 @@
     <footer>
       <p>Copyright 2014 © DataGeek. All Rights Reserved.</p>
       <p>数据极客 版权所有</p>
-      <p>Updated @{{ site.time | date: "%FT%T%Z" }}</p>
+      <p>Updated @{{ site.time | date_to_xmlschema }}</p>
     </footer>
 
     {% include analytics %}
