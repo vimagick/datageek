@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+# extract jekyll frontmatter
+
+import os
+import yaml
+import json
+from sh import grep, sed, jq
+from io import BytesIO
+from sys import stdin
+from datetime import datetime, timedelta
+from glob import glob
+
+pwd = os.path.dirname(os.path.realpath(__file__))
+dir = os.path.join(pwd, '../data/text/*.md')
+now = datetime.now()
+
+objs = []
+
+for i in glob(dir):
+
+    txt = grep(sed('-n', '/^---$/,/^---$/p', i), '-v', '^---$')
+    buf = BytesIO(str(txt))
+    obj = yaml.load(buf)
+
+    if now-obj['date'] < timedelta(days=7):
+        if 'new' not in obj['tags']:
+            obj['tags'].append('new')
+
+    objs.append(obj)
+
+objs.sort(key=lambda x:x['date'], reverse=True)
+
+for obj in objs:
+    txt = json.dumps(obj, default=lambda x:str(x))
+    print jq('-r', r'"- name: "+.info.name+"\n  title: "+.title+"\n  date: "+.date+"\n  tags: "+(.tags|@json)', _in=txt)
+

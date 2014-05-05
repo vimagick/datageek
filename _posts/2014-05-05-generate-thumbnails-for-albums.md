@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: post
 title: 生成相册缩略图
-date: 2014-05-04 00:00:00
 tags: imagemagick
 ---
 
