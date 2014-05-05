@@ -15,6 +15,7 @@ tags: imagemagick
 |   |   |-- 9a35134fa33ac1049a19bd22bd4bb3926731ca1a.jpg
 |   |   |-- bdba6938ce1396349fc8ac0c1e62bbf477ffbac5.jpg
 |   |   |-- be630c40fe7fd84bafb9a116a9834d0e43bf9e76.jpg
+|   |   |-- ...
 |   |-- Beautyleg美腿Linda/
 |   |-- cosplay粉色天使 护士的诱惑/
 |   |-- Faye腿模超薄丝袜沙发上激情秀/
@@ -59,3 +60,10 @@ thumbnails/
 |-- 丝袜美腿-不一样的黑丝 一样的性感.jpg
 |-- ...
 ```
+
+### 参考
+
+- <http://www.gnu.org/software/bash/manual/bashref.html#Bourne-Shell-Variables>
+- <http://manpages.ubuntu.com/manpages/trusty/man1/find.1.html>
+- <http://www.imagemagick.org/Usage/montage/>
+
