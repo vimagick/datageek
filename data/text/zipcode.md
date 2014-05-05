@@ -1,6 +1,8 @@
 ---
 layout: text
 title: 中国邮政编码数据库
+date: 2014-03-26 00:00:00
+tags: [hot]
 info:
     文件: zipcode.csv.zip
     条数: 1386529

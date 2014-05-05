@@ -4,9 +4,15 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 <p class="meta">
-<span><b>日期:</b> {{ page.date | date_to_xmlschema }}</span>
-<br/>
-<span><b>标签:</b> {{ page.tags | join:", " }}</span>
+  <b>日期:</b>
+  <span>{{ page.date | date_to_xmlschema }}</span>
+  <br/>
+  {% if page.tags.size > 0 %}
+    <b>标签:</b>
+    {% for tag in page.tags %}
+      <span class="post-tag"> {{ tag }} </span>
+    {% endfor %}
+  {% endif %}
 </p>
 
 <div class="post">

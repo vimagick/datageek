@@ -1,6 +1,8 @@
 ---
 layout: text
 title: stackoverflow招聘信息
+date: 2014-04-18 00:00:00
+tags: [hot, free]
 info:
     文件: stackoverflow-jobs.json.zip
     条数: 1094

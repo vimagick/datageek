@@ -1,6 +1,7 @@
 ---
 layout: text
 title: 阿里巴巴公司黄页(联系信息)
+date: 2014-03-31 00:00:00
 info:
     文件: alibaba-contact.json.zip
     条数: 7597678
@@ -18,7 +19,6 @@ fields:
     - contact: 联系人
 refs:
     - http://corp.1688.com/company/product_category_list.htm
-    - http://www.1688.com/company/2junxing.html?fromSite=company_site&tab=companyWeb_contact
 ---
 
 ```json
