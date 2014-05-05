@@ -1,0 +1,35 @@
+
+<style>
+  #toc {
+    display: block;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    background-color: #FFF8DC;
+    height: 20px;
+    width: 300px;
+  }
+
+  #toc li {
+    list-style: none;
+    float: left;
+    display: inline;
+    padding-left: 10px;
+  }
+</style>
+
+<script>
+  $(function(){
+    $('div.post h3').each(
+      function(i) {
+        $(this).wrap('<a>').parent().attr({'id':i, 'href':'#post-title'});
+        $('<li><a href="#'+i+'">'+$(this).text()+'</a></li>').appendTo($('#toc'))
+        console.log($(this).text());
+      }
+    );
+  });
+</script>
+
+<ul id="toc"></ul>
+

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h2 id="post-title">{{ page.title }}</h2>
 <p class="meta">
   <b>日期:</b>
   <span>{{ page.date | date_to_xmlschema }}</span>
@@ -14,6 +14,8 @@ layout: default
     {% endfor %}
   {% endif %}
 </p>
+
+{% include toc %}
 
 <div class="post">
   {{ content }}

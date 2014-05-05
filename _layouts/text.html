@@ -2,72 +2,30 @@
 layout: post
 ---
 
-<style>
-  #text #toc {
-    display: block;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    padding: 10px;
-    background-color: #FFF8DC;
-    height: 20px;
-    width: 300px;
-  }
-
-  #text #toc li {
-    list-style: none;
-    float: left;
-    display: inline;
-    padding-left: 10px;
-  }
-</style>
-
-<script>
-  $(function(){
-    $('#text h3').each(
-      function(i) {
-        $(this).wrap('<a>').parent().attr({'id':i, 'href':'#title'});
-        $('<li><a href="#'+i+'">'+$(this).text()+'</a></li>').appendTo($('#toc'))
-        console.log($(this).text());
-      }
-    );
-  });
-</script>
-
 <div id="text">
-
-  <ul id="toc"></ul>
-
   <h3>描述</h3>
-
   <ul>
-      {% for kv in page.info %}
+    {% for kv in page.info %}
       <li>
-      <b>{{ kv[0] }}:</b> {{ kv[1] }}
+        <b>{{ kv[0] }}:</b> {{ kv[1] }}
       </li>
-      {% endfor %}
+    {% endfor %}
   </ul>
-
   <h3>字段</h3>
-
   <ol>
-      {% for field in page.fields %}
+    {% for field in page.fields %}
       <li> {{ field }} </li>
-      {% endfor %}
+    {% endfor %}
   </ol>
-
   <h3>示例</h3>
-
   {{ content }}
-
   <h3>来源</h3>
-
   <ul>
-      {% for ref in page.refs %}
+    {% for ref in page.refs %}
       <li><a href="{{ ref }}">{{ ref }}</a></li>
-      {% endfor %}
+    {% endfor %}
   </ul>
-
 </div>
 
 {% include disqus %}
+
