@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 命令行下载微博相册
+title: 下载微博相册
 tags: firebug curl jq aria2
 ---
 
