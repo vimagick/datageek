@@ -26,3 +26,6 @@ DataGeek™上发布的所有资源均取之于互联网。
 [2]: http://stackoverflow.com/users/348785/kev
 [3]: http://im.qq.com/favicon.ico
 [4]: http://qun.qzone.qq.com/group#!/365277982/home
+
+{% include disqus %}
+
