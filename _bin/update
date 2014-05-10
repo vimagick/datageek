@@ -26,6 +26,10 @@ for i in glob(dir):
         if 'new' not in obj['tags']:
             obj['tags'].append('new')
 
+    if obj['info']['price'] < 0.01:
+        if 'free' not in obj['tags']:
+            obj['tags'].append('free')
+
     objs.append(obj)
 
 objs.sort(key=lambda x:x['date'], reverse=True)
