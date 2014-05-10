@@ -1,7 +1,12 @@
+- name: jd-book-index
+  title: 京东图书目录
+  date: 2014-05-10 12:17:45
+  tags: ["jd","book","new"]
+
 - name: makepolo-detail
   title: 马可波罗公司黄页
   date: 2014-04-29 00:00:00
-  tags: ["buz","new"]
+  tags: ["buz"]
 
 - name: logistics-network
   title: 全国物流网点分布情况
