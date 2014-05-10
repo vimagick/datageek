@@ -2,7 +2,7 @@
 layout: text
 title: stackoverflow招聘信息
 date: 2014-04-18 00:00:00
-tags: [hot, free]
+tags: [hot]
 info:
     name: stackoverflow-jobs
     format: json
@@ -23,7 +23,7 @@ fields:
 refs:
     - http://careers.stackoverflow.com/jobs
 files:
-    - http://yunpan.cn/QigGDZxH3eb4a#5c52
+    - http://pan.baidu.com/s/1kTibHeZ
 ---
 
 ```json

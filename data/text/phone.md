@@ -2,7 +2,7 @@
 layout: text
 title: 手机号码归属地数据库
 date: 2014-04-12 00:00:00
-desc: ""
+desc: "完整的手机号码数据库"
 tags: [hot]
 info:
     name: phone
@@ -17,6 +17,8 @@ fields:
     provider: 运营商
 refs:
     - http://cx.shouji.360.cn/
+files:
+    - http://pan.baidu.com/s/1hqkPGws
 ---
 
 ```
