@@ -1,7 +1,7 @@
 ---
 layout: post
-title: raspi安装指南
-tags: raspi
+title: 树莓派安装指南
+tags: raspi archlinux
 ---
 
 ### install
@@ -32,18 +32,32 @@ ntpdate time.apple.com
 ### network
 
 ```bash
+# 有线网络
 cd /etc/netctl
-cp examples/ethernet-static eth0
+cp examples/ethernet-dhcp eth0
 vi eth0
 
     Interface=eth0
     Connection=ethernet
-    IP=static
-    Address=('192.168.1.111/24')
-    Gateway='192.168.1.1'
-    DNS=('8.8.8.8')
-    ExecUpPost='/usr/bin/ntpd -gq || true'
+    IP=dhcp
+    ExecUpPost='/usr/bin/ntpdate -u time.apple.com || true'
 
+# 无线网络
+cp examples/wireless-static wlan0
+vi wlan0
+
+    Interface=wlan0
+    Connection=wireless
+    Security=wpa
+    ESSID='MyNetwork'
+    Key='WirelessKey'
+    IP=static
+    Address='192.168.1.111/24'
+    Gateway='192.168.1.1'
+    DNS='8.8.8.8'
+    ExecUpPost='/usr/bin/ntpdate -u time.apple.com || true'
+
+# 重启机器
 reboot
 ```
 
@@ -51,10 +65,16 @@ reboot
 
 ```bash
 vi /etc/pacman.d/mirrorlist
+
+    Server = http://us.mirror.archlinuxarm.org/$arch/$repo
+
 pacman -Syu
-pacman -S sudo vim tmux git python
+pacman -S vim tmux git python python-pip base-devel
 ln -s /usr/bin/vim /usr/local/bin/vi
 visudo
+
+    %wheel ALL=(ALL) NOPASSWD: ALL
+
 ```
 
 ### account
