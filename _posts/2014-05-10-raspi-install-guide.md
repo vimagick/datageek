@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 树莓派安装指南
-tags: raspi archlinux
+tags: raspi
 ---
 
 ### install
