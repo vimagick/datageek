@@ -13,7 +13,7 @@ tags: ubuntu aliyun
     sudo apt-get install python-software-properties
     sudo add-apt-repository ppa:kalakris/tmux
     sudo apt-get update
-    sudo apt-get install tmux htop tree
+    sudo apt-get install tmux git tree build-essential python-dev
 
 ### python
 
