@@ -8,7 +8,7 @@ tags: firebug curl jq aria2
 
 - firefox: <http://photo.weibo.com/2167446614/talbum/index?from=profile_wb>
 - firebug:
-    - 点击**下一页**, 截获`ajax`调用, 分析数据包
+    - 点击相册**下一页**, 截获`ajax`调用, 分析数据包
     - 导出**Cookies**: `Cookies » Export Cookies For This Site » /tmp/cookies.txt`
 
 ### 命令
