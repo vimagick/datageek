@@ -17,6 +17,8 @@ fields:
     time: 采集时间
 refs:
     - http://corp.1688.com/company/product_category_list.htm
+files:
+    - http://pan.baidu.com/s/1i3C8jYX
 ---
 
 ```json
