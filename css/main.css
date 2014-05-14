@@ -580,3 +580,12 @@ ul.posts li {
   width: 70%;
 }
 
+div.sidebar-box {
+  background-color: #FFF8DC;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+div.sidebar-box ul {
+  margin-bottom:0;
+}
