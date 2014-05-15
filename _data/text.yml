@@ -8,6 +8,11 @@
   date: 2014-05-11 00:00:00
   tags: ["jd","book","new","free"]
 
+- name: jd-review
+  title: 京东商品评价(LTS)
+  date: 2014-05-11 00:00:00
+  tags: ["jd","lts","new"]
+
 - name: jd-book-index
   title: 京东图书目录
   date: 2014-05-10 12:17:45
