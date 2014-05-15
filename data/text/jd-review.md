@@ -23,29 +23,37 @@ fields:
     tags: 标签(多值)
     uid: 用户编号
     url: 评价链接
-    vote: 打分
+    rate: 评分
+    upvote: 有用
+    reply: 回复
 refs:
     - http://www.jd.com
 files:
+    - http://pan.baidu.com/s/1dD8C937#g2cu
 ---
 
 ```json
 {
-        "_id" : ObjectId("53741164d41b8245eb162012"),
-        "name" : "yanshaoqing86",
-        "level" : "铜牌会员",
-        "url" : "http://club.jd.com/repay/1057189845_5d610419-eb5d-4270-909d-d515beabd608_1.html",
+        "_id" : ObjectId("537483f6d41b825f6cb535b8"),
+        "name" : "jd_5826351cdbdc9",
+        "level" : "金牌会员",
+        "url" : "http://club.jd.com/repay/793353_806ce4ad-5a49-4c6e-9d14-a27b97092acb_1.html",
+        "upvote" : 0,
         "tags" : [
-                "包装很好"
+                "品种多",
+                "分量足",
+                "价格便宜"
         ],
-        "pid" : "1057189845",
-        "content" : "好像没看清，给另外一个车用吧",
-        "date" : ISODate("2014-05-15T00:58:00Z"),
-        "address" : "江苏",
-        "vote" : 5,
-        "buydate" : ISODate("2014-05-04T00:59:00Z"),
-        "id" : "5d610419-eb5d-4270-909d-d515beabd608",
-        "uid" : "146608425"
+        "pid" : "793353",
+        "content" : "价格给力！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！",
+        "rate" : 4,
+        "time" : 1400144886,
+        "date" : ISODate("2014-05-15T09:07:00Z"),
+        "reply" : 0,
+        "buydate" : ISODate("2014-05-13T16:00:00Z"),
+        "id" : "806ce4ad-5a49-4c6e-9d14-a27b97092acb",
+        "address" : "天津",
+        "uid" : "77765804"
 }
 ```
 
