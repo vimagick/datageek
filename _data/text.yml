@@ -1,3 +1,8 @@
+- name: alibaba-go-idx
+  title: 阿里巴巴求购列表(LTS)
+  date: 2014-05-16 00:00:00
+  tags: ["buz","alibaba","lts","new"]
+
 - name: jd-review
   title: 京东商品评价(LTS)
   date: 2014-05-15 00:00:00
