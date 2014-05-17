@@ -2,7 +2,7 @@
 layout: text
 title: 阿里巴巴公司黄页(联系信息)
 date: 2014-03-31 00:00:00
-tags: [buz]
+tags: [buz, alibaba]
 info:
     name: alibaba-contact
     format: json
