@@ -10,6 +10,7 @@ tags: text
 
 ```
 :g/^/+d
+:%norm jdd
 ```
 
 ### sed
