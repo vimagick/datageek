@@ -7,7 +7,7 @@ tags: [baidu]
 info:
     name: baidu-koubei
     format: json
-    count: 30000+
+    count: 33626
     date: 2014-05-26
     price: 10.00
 fields:
@@ -23,6 +23,7 @@ fields:
 refs:
     - http://koubei.baidu.com
 files:
+    - http://pan.baidu.com/s/1qWLOkXm
 ---
 
 ```json
