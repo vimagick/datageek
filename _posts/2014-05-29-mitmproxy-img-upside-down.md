@@ -12,6 +12,28 @@ mitmproxy是款基于文本界面的HTTP调试工具, 而且还可以用python�
 
 ### 代码
 
-{% gist vimagick/3f5acbb1081937a51f10 %}
+```python
+#!/usr/bin/env python
+# mitmproxy script to turn images upside down
 
+def contains(x, y):
 
+    return any(y in i for i in x)
+
+def request(content, flow):
+
+    hd = flow.request.headers
+
+    if 'Accept-Encoding' in hd and contains(hd['Accept'], 'text/html'):
+        del hd['Accept-Encoding']
+
+def response(context, flow):
+
+    hd = flow.response.headers
+
+    if 'Content-Encoding' not in hd and contains(hd['Content-Type'], 'text/html'):
+        flow.response.content = flow.response.content.replace(
+            '</head>',
+            '<style>img {transform:rotate(180deg) !important;}</style></head>'
+        )
+```
