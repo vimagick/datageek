@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 文本隔行删除的方法
-tags: text
+tags: [vim, sed, awk, perl]
 ---
 
 文本处理工具多如牛毛，方法往往不止一种。 先给四个, 抛砖引玉。
