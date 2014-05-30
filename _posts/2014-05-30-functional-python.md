@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 函数式python
+title: python函数式编程
 tags: python javascript functional
 ---
 
