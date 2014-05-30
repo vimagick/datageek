@@ -33,24 +33,24 @@ files:
 
 ```json
 {
-        "_id" : ObjectId("53757831d600ddf019f284de"),
-        "count" : 3000,
-        "reply" : 1,
-        "title" : "采购库存夏季用毯子 空调毯",
-        "url" : "http://go.1688.com/buyoffer/32785802.htm",
-        "oid" : "32785802",
-        "mid" : "kekexili716",
-        "date" : ISODate("2014-05-15T16:00:00Z"),
-        "expire" : 16,
-        "time" : 1400207409,
-        "buyer" : "",
-        "icons" : [
-                "诚信通",
-                "企业认证",
-                "4星级"
-        ],
-        "unit" : "条",
-        "buytype" : "现货/标准品"
+    "_id" : ObjectId("53757831d600ddf019f284de"),
+    "count" : 3000,
+    "reply" : 1,
+    "title" : "采购库存夏季用毯子 空调毯",
+    "url" : "http://go.1688.com/buyoffer/32785802.htm",
+    "oid" : "32785802",
+    "mid" : "kekexili716",
+    "date" : ISODate("2014-05-15T16:00:00Z"),
+    "expire" : 16,
+    "time" : 1400207409,
+    "buyer" : "",
+    "icons" : [
+            "诚信通",
+            "企业认证",
+            "4星级"
+    ],
+    "unit" : "条",
+    "buytype" : "现货/标准品"
 }
 ```
 
