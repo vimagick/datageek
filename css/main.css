@@ -562,6 +562,7 @@ ul.posts li {
 }
 
 .post table.kv {
+  margin-bottom: 20px;
   width: 50%;
 }
 
