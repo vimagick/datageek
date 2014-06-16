@@ -4,17 +4,14 @@ title: 关于
 permalink: /about/
 ---
 
-### 关于
+### 技能交换
 
-**DataGeek™**: Time to Play!
-
-### 联系
+已会: `vim`, `bash`, `regex`, `python`, `scrapy` ...  
+想学: `淘宝开店`, `游戏外挂`, `交友聊天` ...  
 
 [![flair][1]][2]
 
 ![qq][3] [365277982][4] (群)
-
-> I am a linux command line geek!
 
 [1]: /img/so.png
 [2]: http://stackexchange.com/leagues/1/alltime/stackoverflow/2008-07-31/348785#348785
