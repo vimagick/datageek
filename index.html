@@ -12,47 +12,17 @@
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
-    <style>
-      .marketing h4 {
-        color: #428bca;
-      }
-
-      .boxes {
-        padding: 5px;
-      }
-
-      .box {
-        background-color: #f3f3f3;
-        border: 1px solid #999999;
-        border-radius: 3px;
-        display: block;
-        margin: 0 0 14px 15px;
-        padding: 10px;
-        float: left;
-        width: 15%;
-        height: 100px;
-      }
-
-      .box:hover {
-        background-color: lightblue;
-      }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+    <script src="js/app.js"></script>
 
   </head>
 
-  <body>
+  <body ng-app='datageek'>
 
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">主页</a></li>
-          <!-- <li><a href="#">关于</a></li> -->
-          <li><a href="#" onclick="alert('QQ群: 365277982')">联系</a></li>
-        </ul>
-        <h3 class="text-muted">DataGeek™</h3>
-      </div>
+
+      <div ng-include src="'tpl/header.html'" class="header"></div>
 
       <div class="jumbotron">
         <h1>Welcome!</h1>
@@ -66,80 +36,13 @@
         </p>
       </div>
 
-      <div class="row marketing boxes">
-          <div class="box">
-            <h4>vim</h4>
-            <p>编辑器之神</p>
-          </div>
+      <boxes></boxes> 
 
-          <div class="box">
-            <h4>git</h4>
-            <p>小巧玲珑, 聪明好用</p>
-          </div>
-
-          <div class="box">
-            <h4>python</h4>
-            <p>简约不简单</p>
-          </div>
-
-          <div class="box">
-            <h4>bash</h4>
-            <p>飞一般的感觉</p>
-          </div>
-
-          <div class="box">
-            <h4>firefox</h4>
-            <p>可爱的小狐狸</p>
-          </div>
-
-          <div class="box">
-            <h4>tmux</h4>
-            <p>命令行神器</p>
-          </div>
-
-          <div class="box">
-            <h4>redis</h4>
-            <p>黑客的数据库</p>
-          </div>
-
-          <div class="box">
-            <h4>phantomjs</h4>
-            <p>无头浏览器</p>
-          </div>
-
-          <div class="box">
-            <h4>emacs</h4>
-            <p>神的编辑器</p>
-          </div>
-
-          <div class="box">
-            <h4>more</h4>
-            <p>coming soon!</p>
-          </div>
-
-          <div class="box">
-            <h4>even more</h4>
-            <p>coming soon!</p>
-          </div>
-
-          <div class="box">
-            <h4>even even more</h4>
-            <p>coming soon!</p>
-          </div>
-      </div>
-
-      <div class="footer">
-        <hr>
-        <p>&copy; DataGeek™ 2014</p>
-      </div>
+      <div ng-include src="'tpl/footer.html'" class="footer"> </div>
 
     </div> <!-- /container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
   </body>
 </html>
